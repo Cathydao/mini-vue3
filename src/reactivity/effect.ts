@@ -1,7 +1,7 @@
 import { extend } from './shared/index';
 let activeEffect: any;
 let shouldTrack: any;
-class ReactiveEffect {
+export class ReactiveEffect {
     private _fun: Function;
     public scheduler: Function | undefined;
     active: any = true;
